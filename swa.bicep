@@ -1,5 +1,5 @@
 param name string
-@allowed([ 'centralus', 'eastus2', 'eastasia', 'westeurope', 'westus2' ])
+@allowed([ 'centralus', 'northcentralus', 'westeurope', 'northeurope' ])
 param location string
 @allowed([ 'Free', 'Standard' ])
 param sku string = 'Standard'
