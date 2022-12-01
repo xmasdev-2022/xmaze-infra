@@ -12,3 +12,12 @@ module staticWebApp './swa.bicep' = {
         name: swaName
     }
 }
+
+module storage 'storage.bicep' = {
+    name: '${deployment().name}--storage'
+    params: {
+        location: location
+        sku: 'Standard_LRS'
+        name: 'xmasdev2022storage'
+    }
+}
